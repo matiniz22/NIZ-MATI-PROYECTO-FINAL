@@ -1,0 +1,333 @@
+
+body{
+    /*background-image: url(../imagenes/joggerverde.jpg);*/
+    background-color: dodgerblue;
+    background: size 100% 
+   
+}
+
+
+
+header{
+    text-align: center;
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    
+}
+.pTransition{
+    transition: height 1s;
+}
+.pTransition:hover{
+    height: 100px;
+}
+
+
+h2{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding: 50px;
+    margin: 50px;
+
+}
+
+h3{
+    display: block;
+    background-color: white;
+    text-align: start;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    padding: 10px;
+    margin: 10x;
+  
+}
+nav{
+    display: block;
+    background-color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    padding: 10px;
+    margin: 10x;
+}
+.grid-loyout{
+    display: grid; 
+    grid-template-columns: 50% auto;
+   justify-content: center;
+    background-color: aqua;
+    grid-template-rows: 100px ;
+
+
+}
+.limenu{
+    display: grid;
+    border: 4px solid black;
+    background-color: lightgray;
+    text-align: center;
+
+}
+
+
+
+
+
+
+footer{
+
+    font-size: 32px;
+    font-size: 50px;
+    padding: 50px;
+    margin: 50px;
+    text-align: center;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+    
+.parrafoaccesorios{
+    background-color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px
+
+
+}
+.fondoaccesorios{
+  /*  background-image: url(../imagenes/imagendefondo.jpg);*/
+  background-color: dodgerblue;
+    background: size 100% ;
+
+}
+
+.accesorios{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding: 50px;
+    margin: 50px;
+}
+.menuaccesorios{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding: 50px;
+    margin: 50px;
+
+}
+.contactoaccesorios{
+    background-color: black;
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+    margin: 30x;
+
+}
+
+
+
+
+
+
+.fondocontacto{
+    background-image: url(../imagenes/imagendefondo.jpg);
+    background: size 100% ;
+
+}
+.h1contacto{
+    background-color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px
+}
+.formulariocontacto{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    padding: 80px;
+    margin: 80px;
+
+}
+.menudenavegacioncontacto{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding: 50px;
+    margin: 50px;
+
+}
+.pagcontacto{
+    background-color: black;
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+    margin: 30px;
+}
+
+
+
+
+
+
+
+
+
+.fondojoggers{
+   background-color: dodgerblue;
+   background: linear-gradient(to right black white);
+}
+
+.contenedorjoggers{
+    border: 2px solid beige;
+    border-radius: 25px;
+
+}
+.grid-loyoutjoggernegro,
+.grid-loyoutjoggerverde
+{
+    display: grid;
+    grid-template-columns: repeat(2, fr);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    padding: 10px;
+    margin: 10x;
+    border: 2px;
+    border-radius: 25px;
+}
+
+.descripcionjoggernegro,
+.descripcionjoggerverde
+{
+    border: 2px solid beige;
+    border-radius: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    
+}
+
+
+
+
+.imgjoggernegro,
+.imgjoggerverde
+{
+   width: 300px;
+}
+
+
+.imgjoggernegro:hover,
+.imgjoggerverde:hover{
+    transform: scale(1.5);
+}
+
+
+
+
+.menujoggers{
+    background-color: dodgerblue;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    padding: 10px;
+    margin: 10x;
+   border:  2px solid beige;
+   border-radius: 25px;
+}
+
+.contactojoggers{
+
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    padding: 30px;
+    margin: 10x;
+    border:  2px solid beige;
+   border-radius: 25px;
+}
+
+
+
+
+
+
+
+.fondoremeras{
+
+ background-color: dodgerblue;
+
+}
+
+.h1remeras{
+    background-color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px
+
+}
+
+.menuremeras{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding: 50px;
+    margin: 50px;
+
+}
+.contactoremeras{
+    background-color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px
+}
+
+
+
+
+.h1suscripcion{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding: 50px;
+    margin: 50px;
+
+}
+
+.formulariosuscripcion{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
+
+}
+.menususcripcion{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding: 50px;
+    margin: 50px;
+
+
+
+}
+.contactosuscripcion{
+    background-color: black;
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+    margin: 30px;
+
+}
+
+
