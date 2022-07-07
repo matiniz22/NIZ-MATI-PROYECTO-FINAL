@@ -3,18 +3,103 @@ body{
     /*background-image: url(../imagenes/joggerverde.jpg);*/
     background-color: dodgerblue;
     background: size 100% 
-   
 }
 
+.contenedor{
+    background-color: dodgerblue;
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+    background-size: 100%;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(6 auto);
+   /* grid-template-rows: repeat(5, auto);*/
+
+   grid-template-areas: "header "
+                         "h2"
+                         "h3"
+                         "menu"
+                         "footer";
+                         
 
 
-header{
+}
+.contenedor,
+.header,
+.h2,
+.h3,
+.menu
+.footer{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 4px;
+}
+.contenedor
+.header{
+    background: white;
+    color: black;
     text-align: center;
-    background-color: white;
-    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 40px;
+    grid-area: header;
     
 }
+
+.contenedor .h2{
+    background-color: white;
+    color:black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:fantasy;
+    font-size: 60px;
+    grid-area: h2;
+
+}
+
+.contenedor .h3{
+    background: white;
+    color: black;
+    display: flex;
+    align-items: flex-start;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    grid-area: h3;
+}
+
+.contenedor .menu{
+   background-color: white;
+   color: black;
+   text-align: center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 40px;
+   padding: 10px;
+   margin: 10x;
+   border-bottom: 20px;
+   list-style: none;
+   grid-area: menu;
+}
+
+.contenedor .footer{
+    background: white;
+    color: black;
+   text-align: center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 20px;
+   padding: 10px;
+   margin: 10x;
+   border-bottom: 20px;
+   grid-area: footer;
+
+}
+
+
+
 .pTransition{
     transition: height 1s;
 }
@@ -23,70 +108,7 @@ header{
 }
 
 
-h2{
-    background-color: black;
-    color: white;
-    text-align: center;
-    font-size: 50px;
-    padding: 50px;
-    margin: 50px;
 
-}
-
-h3{
-    display: block;
-    background-color: white;
-    text-align: start;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
-    padding: 10px;
-    margin: 10x;
-  
-}
-nav{
-    display: block;
-    background-color: white;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
-    padding: 10px;
-    margin: 10x;
-}
-.grid-loyout{
-    display: grid; 
-    grid-template-columns: 50% auto;
-   justify-content: center;
-    background-color: aqua;
-    grid-template-rows: 100px ;
-
-
-}
-.limenu{
-    display: grid;
-    border: 4px solid black;
-    background-color: lightgray;
-    text-align: center;
-
-}
-
-
-
-
-
-
-footer{
-
-    font-size: 32px;
-    font-size: 50px;
-    padding: 50px;
-    margin: 50px;
-    text-align: center;
-}
-ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
     
 .parrafoaccesorios{
     background-color: white;
@@ -111,13 +133,26 @@ ul{
     padding: 50px;
     margin: 50px;
 }
-.menuaccesorios{
-    background-color: black;
-    color: white;
+
+.imagendubai{
+    display: grid;
+    grid-template-columns: repeat(2, fr);
     text-align: center;
-    font-size: 50px;
-    padding: 50px;
-    margin: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    padding: 10px;
+    margin: 10x;
+    border: 2px;
+    border-radius: 25px;
+}
+
+
+.menuaccesorios{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: grid;
+    border: 4px solid black;
+    background-color: lightgray;
+    text-align: center;
 
 }
 .contactoaccesorios{
@@ -134,25 +169,50 @@ ul{
 
 
 
-.fondocontacto{
-    background-image: url(../imagenes/imagendefondo.jpg);
+.containercontacto{
+   /* background-image: url(../imagenes/imagendefondo.jpg);*/
     background: size 100% ;
+    background-color: dodgerblue;
 
 }
-.h1contacto{
+.headercontacto{
     background-color: white;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 40px
 }
-.formulariocontacto{
-    background-color: black;
-    color: white;
+.h2contacto{
+    background-color: white;
+    color: black;
     text-align: center;
-    font-size: 80px;
-    padding: 80px;
-    margin: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: fantasy;
+    font-size: 60px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 4px;
+    
+}
 
+
+.pcontacto{
+    background: white;
+    color: black;
+    text-align: start;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.letra{
+    background-color: aqua;
 }
 .menudenavegacioncontacto{
     background-color: black;
@@ -163,12 +223,24 @@ ul{
     margin: 50px;
 
 }
-.pagcontacto{
-    background-color: black;
+.footercontacto{
+    background: white;
+    color: black;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
-    padding: 30px;
-    margin: 30px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 4px;
+
+}
+
+
+.d-block{
+    width: 20px;
 }
 
 
@@ -177,23 +249,20 @@ ul{
 
 
 
-
-
-.fondojoggers{
-   background-color: dodgerblue;
-   background: linear-gradient(to right black white);
-}
-
-.contenedorjoggers{
-    border: 2px solid beige;
-    border-radius: 25px;
-
+/*.contenedorjoggers{
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+    background-size: 100%;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(6, auto);
 }
 .grid-loyoutjoggernegro,
 .grid-loyoutjoggerverde
 {
-    display: grid;
-    grid-template-columns: repeat(2, fr);
+   display: grid;
+    grid-template-col umns: repeat(2, fr);
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 40px;
@@ -251,7 +320,7 @@ ul{
     margin: 10x;
     border:  2px solid beige;
    border-radius: 25px;
-}
+}*/
 
 
 
@@ -330,4 +399,146 @@ ul{
 
 }
 
+
+
+.contenedorjogger{
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-gap: 30px;
+    background-size: 100%;
+    /*grid-template-rows: repeat(6, auto);*/
+    grid-template-areas: "joggerheader"
+                         "joggerverde"
+                         "joggernegro"
+                         "joggermenu"
+                         "joggersection"
+                         "joggerfooter";
+    
+
+}
+
+.contenedorjogger,
+.joggerheader,
+.joggermain,
+.joggermenu,
+.joggersection,
+.joggerfooter{
+    background: dodgerblue;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 4px;
+}
+.contenedorjogger .joggerheader{
+    background: white;
+    color: black;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    grid-area: auto;
+    
+
+}
+.contenedorjogger .joggerh1{
+    background-color: white;
+    color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+    grid-area:auto
+
+}
+
+.joggernegro,
+.joggerverde{
+    color:black ;
+    border: 2px solid black;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-gap: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    padding: 10px;
+    margin: 10x;
+    border: 2px;
+    border-radius: 25px;
+    grid-area: auto;
+}
+.descripcionjoggernegro,
+.descripcionjoggerverde
+{
+   background-color: beige;
+}
+    
+
+
+
+.imgjoggernegro,
+.imgjoggerverde
+{
+   width: 300px;
+}
+
+
+.imgjoggernegro:hover,
+.imgjoggerverde:hover{
+    transform: scale(1.5);
+}
+
+.joggermenu{
+
+    background: white;
+    color: black;
+   text-align: center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 40px;
+   padding: 10px;
+   margin: 10x;
+   border-bottom: 20px;
+   list-style: none;
+   grid-area: auto;
+
+}
+
+.joggerfooter{
+    background: white;
+    color: black;
+   text-align: center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 40px;
+   padding: 10px;
+   margin: 10x;
+   grid-area: auto
+ 
+}
+
+@media screen and (max-width: 768px){
+    body{
+        background: black;
+    }
+    .contenedor{
+        grid-template-areas: "header "
+                         "h2"
+                         "h3"
+                         "menu"
+                         "footer";
+    }
+
+    .contenedorjogger{
+        grid-template-areas: "joggerheader"
+        "joggerverde"
+        "joggernegro"
+        "joggermenu"
+        "joggersection"
+        "joggerfooter";
+    }
+}
 
