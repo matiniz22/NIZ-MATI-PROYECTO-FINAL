@@ -1,73 +1,104 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <head>
-    <title>
-        suscripcion
-    </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            SUSCRIPCION
+        </title>
+       
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../css/style.css">
 
+   
+    
+        <link rel="stylesheet" href="../css/style.css">
+    
+    </head>
 </head>
 
-<body >
-    <header>
-    <h1 class="h1suscripcion">Essenciales que todo hombre necesita</h1>
-    </header>
-    <main>
-    <section>
-    <form action="" method="GET" enctype="multipart/form-data">
-        <fieldset class="formulariosuscripcion">
-            <legend >Información Personal:</legend>
-
-            <label for="sexo">Sexo:</label>
-            <input id="hombre" name="sexo" type="radio" value="hombre">
-            <label for="hombre">Hombre</label>
-            <input id="mujer" name="sexo" type="radio" value="mujer">
-            <label for="mujer">Mujer</label>
-
-            <label for="Users">Usuario:</label>
-            <input type="text" placeholder="Usuario">
-            <label for="password">Contraseña:</label>
-            <input type="password" placeholder="Contraseña">
-
-            
-            <label form="email">Email: </label>
-
-        <input type="email" id="email" placeholder="email" required>
-             
-
+<body>
+    <div class="contenedorsus">
+        <header class="headersus">
+            <h1>Essenciales que todo hombre necesita</h1>
+            </header>
+            <p class="psuscripcion">SUSCRIPCION </p>
+            <section>
+        <div class="conteinersuscripcion">
+            <div class="row g-6">
+                <form action="" method="GET" enctype="multipart/form-data">
+                    <fieldset class="formulariosuscripcion">
+                        <legend >Información Personal:</legend>
+                        <div class="generosus">
+                              <label for="sexo">Sexo:</label>
+                              <input id="hombre" name="sexo" type="radio" value="hombre">
+                              <label for="hombre">Hombre</label>
+                              <input id="mujer" name="sexo" type="radio" value="mujer">
+                              <label for="mujer">Mujer</label>
+                        </div>
+                        
+                        <div class="uscontrasus">
+                            <label for="Users">Usuario:</label>
+                            <input type="text" placeholder="Usuario">
+                            <label for="password">Contraseña:</label>
+                            <input type="password" placeholder="Contraseña">
+                        </div>
+                        <div class="emailsus">
+                            <label form="email">Email: </label>
+    
+                            <input type="email" id="email" placeholder="email" required>
+                        </div>
+                     
         
-            <label for="tel">Telefono:</label>
-            <input type="tel" id="tel" placeholder="Telefono">
+                         <div class="telsus">
+                             <label for="tel">Telefono:</label>
+                             <input type="tel" id="tel" placeholder="Telefono">
+                         </div>
+                    
+                        <div class="enviarsus">
+                          <input type="submit" value="Enviar">
+                          <input type="reset" value="Resetear">
+                          <input type="button" value="Boton">
+                        </div>
+    
+                         
+                         
+                        </fieldset>
+                        </form>
+                      
+            </div>
             
-
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Resetear">
-            <input type="button" value="Boton">
-        </fieldset>
-    </form>
-    </section>
-    <nav id="menu">
-        <ul class="menususcripcion">
-            <li>
-                <a href="file:///C:/Users/matin/OneDrive/Escritorio/TP%20CODER%201/pages/remeras.html" target="_blank">remeras</a>
-            </li>
-            
-           
-            <li>
-                <a href="file:///C:/Users/matin/OneDrive/Escritorio/TP%20CODER%201/pages/joggers.html" target="_blank">joggers</a>
-            </li>
-            
-            <li>
-                <a href="file:///C:/Users/matin/OneDrive/Escritorio/TP%20CODER%201/pages/accesorios.html" target="_blank">accesorios</a>
-            </li>
-        </ul>
-       
-    </nav>
-</main>
-    <footer class="contactosuscripcions">
-        <a href="file:///C:/Users/matin/OneDrive/Escritorio/essencial/contacto.html" target="_blank"> Contacto</a>
+          </div>
+          </section>
+    
+          <nav id="menu">
+            <div class="menusus">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="mb-12 row">
+                                <div class="menu">
+                                    <a href="./pages/remeras.html" class="list-group-item list-group-item-action" target="_blank">REMERAS</a>
+                                    <a href="./pages/joggers.html" class="list-group-item list-group-item-action" target="_blank">JOGGERS</a"> 
+                                     <a href="./pages/accesorios.html"class="list-group-item list-group-item-action" target="_blank">ACCESORIOS</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>    
+    </main>
+    <footer class="footersus">
+        <a href="./pages/contacto.html" target="_blank"> Contacto</a>
        
     </footer>
     
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </body>
+    
+</html>

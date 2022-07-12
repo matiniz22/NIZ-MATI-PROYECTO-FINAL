@@ -1,4 +1,7 @@
-
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{
     /*background-image: url(../imagenes/joggerverde.jpg);*/
     background-color: dodgerblue;
@@ -6,22 +9,11 @@ body{
 }
 
 .contenedor{
+    width:100%;
+    
     background-color: dodgerblue;
-    margin: 20px;
-    padding: 20px;
-    display: grid;
-    grid-gap: 20px;
-    background-size: 100%;
-    grid-template-columns: 1;
-    grid-template-rows: repeat(6 auto);
-   /* grid-template-rows: repeat(5, auto);*/
-
-   grid-template-areas: "header "
-                         "h2"
-                         "h3"
-                         "menu"
-                         "footer";
-                         
+    margin: 0 ;
+    
 
 
 }
@@ -90,10 +82,9 @@ body{
     color: black;
    text-align: center;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
-   font-size: 20px;
-   padding: 10px;
-   margin: 10x;
-   border-bottom: 20px;
+   font-size: 40px;
+   padding: 5px;
+   margin: 5px;
    grid-area: footer;
 
 }
@@ -105,12 +96,20 @@ body{
 }
 .pTransition:hover{
     height: 100px;
-}
+} 
+
+
+
+
+
+
+
+/*ACCESORIOS*/
 
 
 
     
-.parrafoaccesorios{
+/*.parrafoaccesorios{
     background-color: white;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
@@ -119,24 +118,55 @@ body{
 
 }
 .fondoaccesorios{
-  /*  background-image: url(../imagenes/imagendefondo.jpg);*/
+  background-image: url(../imagenes/imagendefondo.jpg);
   background-color: dodgerblue;
-    background: size 100% ;
+    background: size 100% ;*/
+/*
+.contenedoraccesorios{
+    background: dodgerblue;
+    margin: 10px;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "p p p "
+    "section section section"
+    "nav nav nav"
+    "footer footer footer"
+    ;
+    grid-template-rows: 10% 40% 40% 5% 5%;
+   
 
 }
 
-.accesorios{
+.headeraccesorios{
     background-color: black;
     color: white;
     text-align: center;
-    font-size: 50px;
-    padding: 50px;
-    margin: 50px;
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
+    grid-area: header;
 }
-
-.imagendubai{
+.accesorioss{
+    background-color: white;
+    color:black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:fantasy;
+    font-size: 60px;
+    grid-area: p;
+}
+.sectionaccesorios{
+    color:black ;
+    border: 2px solid black;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     display: grid;
-    grid-template-columns: repeat(2, fr);
+    grid-gap: 20px;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 40px;
@@ -144,7 +174,18 @@ body{
     margin: 10x;
     border: 2px;
     border-radius: 25px;
+    grid-area: section;
+
 }
+
+.imgrelojdubai,
+.imgparis{
+    width: 200px;
+    text-align: center;
+    
+    
+}
+    
 
 
 .menuaccesorios{
@@ -163,23 +204,156 @@ body{
     margin: 30x;
 
 }
+.footercontactoacces{
+    background: white;
+    color: black;
+   text-align: center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 20px;
+   padding: 10px;
+   margin: 10x;
+   border-bottom: 20px;
+   grid-area: footer;
 
 
+}*/
 
-
-
-
-.containercontacto{
-   /* background-image: url(../imagenes/imagendefondo.jpg);*/
-    background: size 100% ;
-    background-color: dodgerblue;
+.contenedorjogger{
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-gap: 30px;
+    background-size: 100%;
+    /*grid-template-rows: repeat(6, auto);*/
+    grid-template-areas: "joggerheader"
+                         "joggerverde"
+                         "joggernegro"
+                         "joggermenu"
+                         "joggersection"
+                         "joggerfooter";
+    
 
 }
+
+.contenedoracces,
+.acessheader,
+.accesmain,
+.accesmenu,
+.accessection,
+.accesfooter{
+    background: dodgerblue;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 4px;
+}
+.contenedoracces .accesheader{
+    background: white;
+    color: black;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    grid-area: auto;
+    
+
+}
+.contenedoracces .accesh1{
+    background-color: white;
+    color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+    grid-area:auto
+
+}
+
+.accesdubai,
+.accesparis{
+    color:black ;
+    border: 2px solid black;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-gap: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    padding: 10px;
+    margin: 10x;
+    border: 2px;
+    border-radius: 25px;
+    grid-area: auto;
+}
+.descripcionaccesdubai,
+.descripcionaccesparis
+{
+   background-color: beige;
+}
+    
+
+
+
+.imgaccesdubai,
+.imgaccesparis
+{
+   width: 300px;
+}
+
+
+.imgaccesdubai:hover,
+.imgaccesparis:hover{
+    transform: scale(1.5);
+}
+
+.accesmenu{
+
+    background: white;
+    color: black;
+   text-align: center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 40px;
+   padding: 10px;
+   margin: 10x;
+   border-bottom: 20px;
+   list-style: none;
+   grid-area: auto;
+
+}
+
+.accesfooter{
+    background: white;
+    color: black;
+   text-align: center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 40px;
+   padding: 10px;
+   margin: 10x;
+   grid-area: auto
+ 
+}
+
+
+
+
+.contenedorcontacto{
+    background-color: dodgerblue;
+}
+
+
+
+
+
 .headercontacto{
     background-color: white;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 40px
+
 }
 .h2contacto{
     background-color: white;
@@ -328,7 +502,7 @@ body{
 
 
 
-.fondoremeras{
+/*.fondoremeras{
 
  background-color: dodgerblue;
 
@@ -356,46 +530,245 @@ body{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 40px
+}*/
+
+/*REMERAS*/
+
+.contenedorremeras{
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-gap: 30px;
+    background-size: 100%;
+    /*grid-template-rows: repeat(6, auto);*/
+    grid-template-areas: "remerasheader"
+                         "remeranegra"
+                         "remerablanca"
+                         "remeramenu"
+                         "remerasection"
+                         "remerafooter";
+    
+
+}
+
+.contenedorremeras,
+.remerasheader,
+.remerasmain,
+.remerasmenu,
+.remerassection,
+.remerasfooter{
+    background: dodgerblue;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 4px;
+}
+.contenedorremeras .remerasheader{
+    background: white;
+    color: black;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    grid-area: auto;
+    
+
+}
+.contenedorremeras .remerash1{
+    background-color: white;
+    color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+    grid-area:auto
+
+}
+
+.remeranegra,
+.remerablanca{
+    color:black ;
+    border: 2px solid black;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-gap: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    padding: 10px;
+    margin: 10x;
+    border: 2px;
+    border-radius: 25px;
+    grid-area: auto;
+}
+.descripcionremeranegra,
+.descripcionremerablanca
+{
+   background-color: beige
+}
+    
+
+
+
+.imgremerablanca,
+.imgremeranegra
+{
+   width: 300px;
+}
+
+
+.imgremeranegra:hover,
+.imgremerablanca:hover{
+    transform: scale(1.5);
+}
+
+.remerasmenu{
+
+    background: white;
+    color: black;
+   text-align: center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 40px;
+   padding: 10px;
+   margin: 10x;
+   border-bottom: 20px;
+   list-style: none;
+   grid-area: auto;
+
+}
+
+.remerasfooter{
+    background: white;
+    color: black;
+   text-align: center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 40px;
+   padding: 10px;
+   margin: 10x;
+   grid-area: auto
+ 
 }
 
 
 
 
-.h1suscripcion{
-    background-color: black;
-    color: white;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contenedorsus{
+    background-color: dodgerblue;
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3);
+    grid-template-rows: repeat(5 auto);
+    grid-template-areas: "headersus headersus headersus "
+                          "psuscripcion  psuscripcion psuscripcion"
+                          "conteinersuscripcion"
+                         "menusus"
+                        "footersus";
+}
+
+.bodysuscripcion{
+    background-color: dodgerblue;
+    margin: 20px;
+    padding: 20px;
+
+}
+.generosus,
+.uscontrasus,
+.emailsus,
+.telsus,
+.enviarsus{
+    margin: 10px;
+    padding: 10px;
+    
+
+}
+
+
+           
+
+.headersus
+{
+    background: white;
+    color: black;
     text-align: center;
-    font-size: 50px;
-    padding: 50px;
-    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    grid-area: auto;
+
+}
+.psuscripcion{
+    background-color: white;
+    color:black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:fantasy;
+    font-size: 60px;
+    grid-area: auto;
+
 
 }
 
 .formulariosuscripcion{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     font-size: 20px;
     padding: 20px;
     margin: 20px;
+    grid-area: auto;
 
 }
-.menususcripcion{
-    background-color: black;
-    color: white;
-    text-align: center;
-    font-size: 50px;
-    padding: 50px;
-    margin: 50px;
-
-
-
+.menusus{
+    background-color: white;
+   color: black;
+   text-align: center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 40px;
+   padding: 10px;
+   margin: 10x;
+   border-bottom: 20px;
+   list-style: none;
+   grid-area: auto;
 }
-.contactosuscripcion{
-    background-color: black;
-    text-align: center;
-    font-size: 30px;
-    padding: 30px;
-    margin: 30px;
+
+.footersus{
+    background: white;
+    color: black;
+   text-align: center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 20px;
+   padding: 10px;
+   margin: 10x;
+   border-bottom: 20px;
+   grid-area: auto;
+  
+
 
 }
 
@@ -539,6 +912,15 @@ body{
         "joggermenu"
         "joggersection"
         "joggerfooter";
+    }
+
+    .contenedoraccesorios{
+        grid-template-areas: 
+        "header header header"
+        "h1 h1 h1 "
+        "section section section"
+        "nav nav nav"
+        "footer footer footer"
     }
 }
 
